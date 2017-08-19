@@ -1,0 +1,40 @@
+/* header.html stylesheet */
+.main{
+    margin: 0 0 15px 0;
+    background: #fff;
+}
+.top-d{
+    height: 30px;
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 30px;
+    color: #AAAAAA;
+}
+.top{
+    width: 1200px;
+    margin: 0 auto 15px;
+   
+}
+.nav{
+    background: #44B549;
+    height: 50px;
+}
+.nav ul{
+    width: 1200px;
+    margin: 0 auto;
+}
+.nav li{
+    float: left;
+    font-size: 20px;
+    line-height: 50px;
+    text-align:center;
+    width: 150px;
+    cursor: pointer;
+}
+.nav li:hover{
+    background: #019C08;
+}
+a,a:hover{
+    text-decoration: none;
+    color: white;
+}
