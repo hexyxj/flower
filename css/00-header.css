@@ -1,5 +1,5 @@
 /* header.html stylesheet */
-.main{
+.header-main{
     margin: 0 0 15px 0;
     background: #fff;
 }
@@ -34,7 +34,7 @@
 .nav li:hover{
     background: #019C08;
 }
-a,a:hover{
+header a,header a:hover{
     text-decoration: none;
     color: white;
 }

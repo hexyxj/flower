@@ -4,6 +4,50 @@
     margin: 0 auto;
 }
 
+/* header start */
+header{
+    min-width: 1200px;
+}
+.header-main{
+    margin: 0 0 15px 0;
+    background: #fff;
+}
+.top-d{
+    height: 30px;
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 30px;
+    color: #AAAAAA;
+}
+.top{
+    width: 1200px;
+    margin: 0 auto 15px;
+   
+}
+.nav{
+    background: #44B549;
+    height: 50px;
+}
+.nav ul{
+    width: 1200px;
+    margin: 0 auto;
+}
+.nav li{
+    float: left;
+    font-size: 20px;
+    line-height: 50px;
+    text-align:center;
+    width: 150px;
+    cursor: pointer;
+}
+.nav li:hover{
+    background: #019C08;
+}
+header a,header a:hover{
+    color: white;
+}
+
+/* header end */
 /* banner start */
 #banner {
     display: flex;
@@ -85,7 +129,7 @@
 }
 
 .flower-img li {
-    margin: 5px 0 0 0;
+    margin: 7px 0 0 0;
     width: 140px;
     height: 140px;
     position: relative;
@@ -193,6 +237,17 @@
     color: #999999;
 }
 /* 每日精选 end */
-
+/* footer start */
+.footer{
+    min-width: 1200px;
+    margin-top: 30px;
+    border-top: 5px solid #019C08;
+}
+.footer footer{
+    width: 1200px;
+    text-align: center;
+    margin: 30px auto;
+}
+/* footer start */
 
 
