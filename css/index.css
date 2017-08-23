@@ -1,9 +1,4 @@
 /* index.html css stylesheet */
-.main {
-    width: 1200px;
-    margin: 0 auto;
-}
-
 /* header start */
 header{
     min-width: 1200px;
@@ -32,6 +27,9 @@ header{
     width: 1200px;
     margin: 0 auto;
 }
+.nav li.on{
+    background: #019C08;
+}
 .nav li{
     float: left;
     font-size: 20px;
@@ -48,6 +46,11 @@ header a,header a:hover{
 }
 
 /* header end */
+.main {
+    width: 1200px;
+    margin: 0 auto;
+}
+
 /* banner start */
 #banner {
     display: flex;
