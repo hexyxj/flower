@@ -460,6 +460,11 @@ img{
     display: block;
     clear: both;
 }
+.margin-overflow::after,
+.margin-overflow::before{
+  content: "";
+  display: table;
+}
 
 .lf{
     float: left;

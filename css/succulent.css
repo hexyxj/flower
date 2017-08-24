@@ -115,7 +115,8 @@ header a:hover {
     line-height: 40px;
     padding: 20px;
     position: relative;
-    font-weight: normal;
+    color: white;
+    font:normal 26px "simsun";
 }
 .title-top h2 span::after{
     position: absolute;
@@ -124,7 +125,7 @@ header a:hover {
     left: -10px;
     right: 10px;
     content: '';
-    background: #fbf2eb;
+    background: #44B549;
     z-index: -1;
 }
 .f-content{
