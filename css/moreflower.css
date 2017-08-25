@@ -11,6 +11,7 @@
      float: left;
  }
  .waterfall-box{
+     background: #fff;
      box-sizing: border-box;
      border: 1px solid #cccccc;
      border-radius: 5px;

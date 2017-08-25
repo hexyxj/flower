@@ -63,11 +63,12 @@ header a:hover {
 
 /* banner start */
 
-
 /* banner end */
 #banner{
-    min-height: 200px;
-    background: #ccc;
+    width: 1200px;
+}
+#banner>img{
+    width: 1200px;
 }
 
 /* floor start */
@@ -128,9 +129,36 @@ header a:hover {
     background: #44B549;
     z-index: -1;
 }
-.f-content{
-    min-height: 200px;
-    background: #ccc;
+
+
+.f-content .img{
+    float: left;
+    padding: 10px;
+    background: #fff;
+    margin: 5px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.f-content .img>img{
+    width: 210px;
+    height: 210px;
+}
+.f-content .img>p{
+    position: absolute;
+    background: #000;
+    opacity: 0;
+    color: #fff;
+    height: 24px;
+    width: 210px;
+    bottom: -14px;
+    text-align: center;
+    line-height: 24px;
+    transition: .5s;
+}
+.f-content .img:hover p{
+    bottom:10px;
+    opacity: .5;
 }
 /* floor end */
 
@@ -151,3 +179,4 @@ header a:hover {
 
 
 /* footer start */
+
