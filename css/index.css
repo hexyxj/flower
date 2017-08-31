@@ -108,6 +108,30 @@ header a,header a:hover{
 #banner .indicators>li.hover{
     background: #4EA2E8;
 }
+
+#banner .btn{
+    height: 60px;
+    width: 30px;
+    line-height: 60px;
+    color: #fff;
+    text-align: center;
+    background: #000;
+    opacity: .25;
+    position: absolute;
+    top: 134px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#banner .left-btn{
+    left: 10px;
+}
+#banner .right-btn{
+    right: 10px;
+}
+#banner .btn:hover{
+    opacity: .5;
+}
 /* banner end */
 
 /* floor common start */
@@ -254,7 +278,7 @@ header a,header a:hover{
 .daily-rec li{
    
     width: 220px;
-    margin: 0 20px 0 0;
+    margin: 0 15px 0 0;
     overflow: hidden;
     float: left;
 }
