@@ -1,4 +1,7 @@
-(()=>{
+window.onload=function(){
+    slider();
+};
+function slider(){
     /* banner slider */
     var bannerImgs=document.querySelector("[data-load='bannerImgs']");
     var bannerInds=document.querySelector("[data-load='bannerInds']");
@@ -18,7 +21,7 @@
                 bannerImgs.style.transition = "";
                 bannerImgs.style.left = 0;
                 n = 0;
-                setTimeout(()=>{
+                setTimeout(function(){
                     bannerImgs.style.transition="all ." + TRANS / 100 + "s linear";
                 },100);
             },TRANS);
@@ -27,5 +30,5 @@
         }
     }
    var timer = setInterval(moveElement, 2000 + TRANS);
-})();
+}
 
