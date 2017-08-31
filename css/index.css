@@ -76,7 +76,6 @@ header a,header a:hover{
 #banner .banner-img {
     position: absolute;
     left: 0;
-    transition: all .3s linear;
 }
 #banner .banner-img li{
     float: left;
