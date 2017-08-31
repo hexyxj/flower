@@ -69,14 +69,45 @@ header a,header a:hover{
 #banner .right-c {
     background: white;
     width: 750px;
+    height: 328px;
+    overflow: hidden;
+    position: relative;
 }
-
+#banner .banner-img {
+    position: absolute;
+    left: 0;
+    transition: all .3s linear;
+}
+#banner .banner-img li{
+    float: left;
+}
+#banner .banner-img li img{
+    height: 328px;
+    widows: 750px;
+}
 #banner .left-c li {
     padding: 10px 0 0 0;
     width: 350px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+#banner .indicators{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+}
+#banner .indicators>li{
+    cursor: pointer;
+    float: left;
+    margin:0 10px 0 0;
+    height: 12px;
+    width: 12px;
+    border-radius: 6px; 
+    background: #fff
+}
+#banner .indicators>li.hover{
+    background: #4EA2E8;
 }
 /* banner end */
 
