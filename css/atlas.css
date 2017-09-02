@@ -1,0 +1,46 @@
+.main{
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+ /* waterfall-box start */
+ .column{
+     display: flex;
+     flex-direction: column;
+     width: calc(100%/4);
+ }
+ .box{
+     padding: 15px;
+     width: 270px;
+ }
+ .waterfall-box{
+     display: block;
+     background: #fff;
+     box-sizing: border-box;
+     border: 1px solid #cccccc;
+     border-radius: 5px;
+     padding: 10px;
+     width: 270px;
+     transition: .5s;
+
+ }
+ .waterfall-box:hover{
+     position: relative;
+     top:-3px;
+     left: -3px;
+     box-shadow: 3px 3px 3px #cccccc;
+ }
+
+ .waterfall-box img{
+     width: 100%;
+     margin-bottom:10px; 
+ }
+ .waterfall-box .desc{
+     color: #666666;
+     font: 18px "simsun";
+     text-indent: 30px;
+ }
+ /* waterfall-box end */

@@ -52,51 +52,57 @@ header a,header a:hover{
 }
 
 /* banner start */
-#banner {
+.slider-banner {
     display: flex;
     justify-content: space-between;
     min-height: 300px;
     width: 100%;
 }
 
-#banner .left-c {
+.slider-banner .left-c {
     background: white;
     box-sizing: border-box;
     width: 430px;
-    padding: 0 0 0 20px;
+    padding: 10px 20px;
+    
 }
-
-#banner .right-c {
+.slider-banner .right-c {
     background: white;
     width: 750px;
     height: 328px;
     overflow: hidden;
     position: relative;
 }
-#banner .banner-img {
+.slider-banner .banner-imgs {
     position: absolute;
     left: 0;
 }
-#banner .banner-img li{
+.slider-banner .banner-imgs li{
     float: left;
 }
-#banner .banner-img li img{
+.slider-banner .banner-imgs li img{
     height: 328px;
     widows: 750px;
 }
-#banner .left-c li {
-    padding: 10px 0 0 0;
-    width: 350px;
+.slider-banner .left-c ul{
+    border-bottom: 1px solid #eee;
+}
+.slider-banner .left-c li {
+    padding: 9px 0;
+    width: 390px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-#banner .indicators{
+.article li:not(:last-child){
+    border-bottom: 1px solid #eee;
+}
+.slider-banner .banner-inds{
     position: absolute;
     bottom: 20px;
     left: 50%;
 }
-#banner .indicators>li{
+.slider-banner .banner-inds>li{
     cursor: pointer;
     float: left;
     margin:0 10px 0 0;
@@ -105,11 +111,11 @@ header a,header a:hover{
     border-radius: 6px; 
     background: #fff
 }
-#banner .indicators>li.hover{
+.slider-banner .banner-inds>li.hover{
     background: #4EA2E8;
 }
 
-#banner .btn{
+.slider-banner .btn{
     height: 60px;
     width: 30px;
     line-height: 60px;
@@ -123,13 +129,13 @@ header a,header a:hover{
     cursor: pointer;
     border-radius: 5px;
 }
-#banner .left-btn{
+.slider-banner .left-btn{
     left: 10px;
 }
-#banner .right-btn{
+.slider-banner .right-btn{
     right: 10px;
 }
-#banner .btn:hover{
+.slider-banner .btn:hover{
     opacity: .5;
 }
 /* banner end */
@@ -168,10 +174,11 @@ header a,header a:hover{
 
 .flower-list ul {
     width: 50%;
+    border-bottom: 1px solid #eee;
 }
 
 .flower-list li {
-    padding: 7px 0;
+    padding: 9px 0;
     float: left;
     width: 220px;
     white-space: nowrap;
@@ -204,7 +211,7 @@ header a,header a:hover{
     transform: scale(1.1);
 }
 
-.flower-img>ul>li>p {
+.flower-img>ul>li p {
     cursor: pointer;
     position: absolute;
     background: #000;

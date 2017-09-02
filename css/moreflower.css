@@ -1,46 +1,132 @@
-.main{
-    position: relative;
+.main {
     width: 1200px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: row;
 }
 
- /* waterfall-box start */
- .column{
-     display: flex;
-     flex-direction: column;
-     width: calc(100%/4);
- }
- .box{
-     padding: 15px;
-     width: 270px;
- }
- .waterfall-box{
-     display: block;
-     background: #fff;
-     box-sizing: border-box;
-     border: 1px solid #cccccc;
-     border-radius: 5px;
-     padding: 10px;
-     width: 270px;
-     transition: .5s;
+.banner {
+    min-height: 200px;
+    background: #D5D5D5
+}
 
- }
- .waterfall-box:hover{
-     position: relative;
-     top:-3px;
-     left: -3px;
-     box-shadow: 3px 3px 3px #cccccc;
- }
 
- .waterfall-box img{
-     width: 100%;
-     margin-bottom:10px; 
- }
- .waterfall-box .desc{
-     color: #666666;
-     font: 18px "simsun";
-     text-indent: 30px;
- }
- /* waterfall-box end */
+/* floor */
+
+.floor {
+    min-height: 200px;
+    background: #fff;
+    margin: 20px 0 0 0;
+    padding: 15px 20px 20px;
+}
+
+.floor>.f-top {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.floor>.f-top>span {
+    color: #44B549;
+    font-size: 20px;
+    border-bottom: 3px solid #44B549;
+}
+
+.f-content {
+    padding: 15px 0 0px 0px;
+}
+
+.f-content .f-name-list {
+    width: 240px;
+}
+
+.f-name-list>li {
+    height: 76px;
+    width: 80px;
+    text-align: center;
+    line-height: 80px;
+    float: left;
+}
+
+.f-name-list>li a {
+    color: #fff;
+    font-size: 18px;
+}
+
+.herbage .f-name-list>li:nth-child(n) {
+    background: #795FA6;
+}
+
+.herbage .f-name-list>li:nth-child(2n) {
+    background: #8F77BD;
+}
+
+.herbage .f-name-list>li:hover {
+    background: #BAA4E3;
+}
+
+.xylophyta .f-name-list>li:nth-child(n) {
+    background: #EC9233;
+}
+
+.xylophyta .f-name-list>li:nth-child(2n) {
+    background: #EE9C45;
+}
+
+.xylophyta .f-name-list>li:hover {
+    background: #EDC69D;
+}
+
+.liana .f-name-list>li:nth-child(n) {
+    background: #F97568;
+}
+
+.liana .f-name-list>li:nth-child(2n) {
+    background: #FA8F84;
+}
+
+.liana .f-name-list>li:hover {
+    background: #EFB7B1;
+}
+
+.arethusa .f-name-list>li:nth-child(n) {
+    background: #E06192;
+}
+
+.arethusa .f-name-list>li:nth-child(2n) {
+    background: #E56999;
+}
+
+.arethusa .f-name-list>li:hover {
+    background: #EFABC6;
+}
+
+.hydrophyte .f-name-list>li:nth-child(n) {
+    background: #A6CF41;
+}
+
+.hydrophyte .f-name-list>li:nth-child(2n) {
+    background: #AFD84A;
+}
+
+.hydrophyte .f-name-list>li:hover {
+    background: #D5E7A8;
+}
+
+.floor .f-img-list {
+    height: 304px;
+    width: 915px;
+    margin-left: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.floor .f-img-list>li {}
+
+.floor .f-img-list>li img {
+    height: 150px;
+    width: 150px;
+}
+
+
+/* floor */

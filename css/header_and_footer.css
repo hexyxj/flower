@@ -31,19 +31,20 @@ header{
 }
 .nav li{
     float: left;
+    width: 150px;
+    height: 50px;
+}
+.nav a {
+    display: block;
     font-size: 20px;
     line-height: 50px;
     text-align:center;
-    width: 150px;
-    cursor: pointer;
+    color: #fff;
+    
 }
-.nav li:hover{
+.nav a:hover{
     background: #019C08;
 }
-header a,header a:hover{
-    color: white;
-}
-
 /* header end */
 
 /* footer start */

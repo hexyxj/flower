@@ -3,8 +3,8 @@ window.onload=function(){
 };
 function slider(){
     /* banner slider */
-    var bannerImgs=document.querySelector("[data-load='bannerImgs']");
-    var bannerInds=document.querySelector("[data-load='bannerInds']");
+    var bannerImgs=document.querySelector(".banner-imgs");
+    var bannerInds=document.querySelector(".banner-inds");
     var imgNum=bannerImgs.children.length;
     var TRANS=300;
     var imgLength=parseInt(window.getComputedStyle(bannerImgs.children[0],null).width);
