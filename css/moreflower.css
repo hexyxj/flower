@@ -3,11 +3,27 @@
     margin: 0 auto;
 }
 
-.banner {
-    min-height: 200px;
-    background: #D5D5D5
-}
 
+/* banner start */
+.banner{
+    height: 450px;
+    position: relative;
+}
+.banner p{
+    height: 50px;
+    opacity: .5;
+    color: #fff;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    line-height: 50px;
+    padding: 0 0 0 20px;
+    width: 1200px;
+    box-sizing: border-box;
+    font-size: 22px;
+    font-family: 'simsun';
+}
+/* banner end */
 
 /* floor */
 
