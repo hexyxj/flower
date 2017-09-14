@@ -65,7 +65,7 @@ function masonry() {
         /* 视口高度 */
         var clientHeight = document.documentElement.clientHeight;
         /* 滚动高度 */
-        var scrollHeight = document.body.scrollTop;
+        var scrollHeight = document.body.scrollTop||document.documentElement.scrollTop;
         /* 最小高度元素局部视口底部距离 */
         var distance = (scrollHeight+clientHeight)-minHeight;
         /* 加载数据 */

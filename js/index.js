@@ -94,6 +94,5 @@ function slider(){
         },TRANS);
     }
    };
-
 }
 
