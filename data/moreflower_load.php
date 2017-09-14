@@ -8,31 +8,31 @@ $data=[
     "hydrophyte"=>[],//水生植物
 ];
 //草本植物
-$sql="SELECT * FROM `f_flower` WHERE family='草本植物'";
+$sql="SELECT * FROM `f_flower` WHERE family='草本植物' ORDER BY update_time DESC LIMIT 0,12";
 $res=mysqli_query($conn,$sql);
 if($res){
     $data["herbage"]=mysqli_fetch_all($res,MYSQLI_ASSOC);
 }
 //木本植物
-$sql="SELECT * FROM `f_flower` WHERE family='草本植物'";
+$sql="SELECT * FROM `f_flower` WHERE family='草本植物' ORDER BY update_time DESC  LIMIT 0,12";
 $res=mysqli_query($conn,$sql);
 if($res){
     $data["xylophyta"]=mysqli_fetch_all($res,MYSQLI_ASSOC);
 }
-//藤本植物
-$sql="SELECT * FROM `f_flower` WHERE family='草本植物'";
+//藤本植物 
+$sql="SELECT * FROM `f_flower` WHERE family='草本植物' ORDER BY update_time  DESC LIMIT 0,12";
 $res=mysqli_query($conn,$sql);
 if($res){
     $data["liana"]=mysqli_fetch_all($res,MYSQLI_ASSOC);
 }
 //兰科植物
-$sql="SELECT * FROM `f_flower` WHERE family='草本植物'";
+$sql="SELECT * FROM `f_flower` WHERE family='草本植物' ORDER BY update_time  DESC LIMIT 0,12";
 $res=mysqli_query($conn,$sql);
 if($res){
     $data["arethusa"]=mysqli_fetch_all($res,MYSQLI_ASSOC);
 }
 //水生植物
-$sql="SELECT * FROM `f_flower` WHERE family='草本植物'";
+$sql="SELECT * FROM `f_flower` WHERE family='草本植物' ORDER BY update_time  DESC LIMIT 0,12";
 $res=mysqli_query($conn,$sql);
 if($res){
     $data["hydrophyte"]=mysqli_fetch_all($res,MYSQLI_ASSOC);

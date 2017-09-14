@@ -1,5 +1,5 @@
 (() => {
-    function myAjax(method,url) {
+   /*  function myAjax(method,url) {
         return new Promise((resolve, reject) => {
             var xhr = null;
             if (window.XMLHttpRequest) {
@@ -22,7 +22,7 @@
             };
             xhr.send(null);
         })
-    }
+    } */
     myAjax( "get","data/moreflower_load.php").then((data) => {
         var dataObj=JSON.parse(data);
         /* 草本植物 */
