@@ -1,4 +1,4 @@
-(() => {
+;(() => {
     myAjax("GET", "data/succulent_load.php")
     .then(msg => {
         var msg=JSON.parse(msg);
@@ -10,7 +10,7 @@
     function loadData(elem,data){
         var html="";
         for(var obj of data){
-            html += `<a class="img" href="#">
+            html += `<a class="img" href="${obj.href}">
             <img src="${obj.pic}" alt="">
             <div class="desc">
                 <div>

@@ -289,6 +289,9 @@ header a,header a:hover{
     overflow: hidden;
     float: left;
 }
+.daily-rec li a{
+    display: block;
+}
 .daily-rec img{
     width: 220px;
 }

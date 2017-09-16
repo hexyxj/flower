@@ -1,4 +1,4 @@
-(() => {
+;(() => {
     myAjax("GET", "data/knowledge_load.php").then(data => {
         var data = JSON.parse(data);
         loadData(document.querySelector(".family"),data.family);
@@ -17,13 +17,13 @@
             var obj = data[i];
             if (i <= 3) {
                 left += ` <li>
-                    <a href="#"><img src="${obj.pic}" alt="${obj.title}"></a>
-                    <p><a href="#">${obj.title.slice(0,11)}</a></p>
+                    <a href="${obj.href}"><img src="${obj.pic}" alt="${obj.title}"></a>
+                    <p><a href="${obj.href}">${obj.title.slice(0,11)}</a></p>
                 </li>`;
             } else if (i <= 11) {
-                right1 += ` <li><a href="#">${obj.title}</a></li>`
+                right1 += ` <li><a href="${obj.href}">${obj.title}</a></li>`
             }else {
-                right2 += ` <li><a href="#">${obj.title}</a></li>`
+                right2 += ` <li><a href="${obj.href}">${obj.title}</a></li>`
             }
         }
         elem.querySelector(".img-c").innerHTML = left;
