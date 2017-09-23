@@ -47,7 +47,7 @@
                 .then(data=>{
                    var  jsonObj=JSON.parse(data);
                    console.log(jsonObj);
-                    if(jsonObj.length<8){
+                    if(jsonObj.length==0){
                         window.onscroll=null;
                         console.log("scroll end");
                         return;

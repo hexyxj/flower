@@ -1,0 +1,32 @@
+.main{
+  box-sizing: border-box;
+  width: 1200px;
+  background: white;
+  min-height: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.content-title h1{
+  padding: 30px;
+  font: 36px 'simsun';
+  text-align: center;
+}
+
+.content-intro{
+  text-align: left;
+  margin: 20px 100px;
+  padding: 20px 100px;
+  border: 1px solid #ccc;
+  color: #ccc;
+  font:20px "simsun";
+}
+.content-details{
+  margin: 40px 280px;
+}
+.content-details p{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font: 18px "simsun";
+  color: #666;
+}
