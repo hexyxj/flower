@@ -1,6 +1,7 @@
 ;
 (() => {
   var loginReg = document.querySelector(".login_and_register");
+  var loginBox = document.querySelector(".login-box");
   var signUp = document.querySelector(".sign-up");
   if (sessionStorage["uname"] && sessionStorage["uid"]) {
     loginReg.innerHTML = `<p>欢迎回来!  ${sessionStorage["uname"]} <a href="#" class="login-out">退出</a></p>`;
@@ -11,7 +12,7 @@
     .addEventListener("click", function (e) {
       e.preventDefault();
       if (e.target.classList.contains("login-btn")) {
-        signUp.style.display = "block";
+        loginBox.style.display = "block";
         /* document.body.addEventListener("click",function(e){
           if(!e.target.classList.contains(".sign-up")){
             signUp.style.display = "none";
@@ -27,11 +28,13 @@
         history.go(0);
       }
     });
-  signUp.addEventListener("click", function (e) {
+    loginBox.addEventListener("click", function (e) {
     e.preventDefault();
     if (e.target.classList.contains("sign-up-close")) {
-      signUp.style.display = "none";
-    } else if (e.target.classList.contains("sign-up-button")) {
+      loginBox.style.display = "none";
+    }else if(e.target.classList.contains("sign-up-bg")){
+      loginBox.style.display = "none";
+    }else if (e.target.classList.contains("sign-up-button")) {
       var uname = signUp.uname.value;
       var upwd = signUp.upwd.value;
       var xhr = null;
@@ -53,7 +56,6 @@
               signUp.style.display="none";
               history.go(0);
             }else{
-
             }
           }
         }

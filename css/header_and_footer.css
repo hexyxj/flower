@@ -50,15 +50,29 @@ header{
 }
 /* header end */
 /* login start */
-.sign-up{
+.login-box{
     display: none;
+}
+.sign-up-bg{
+    position: fixed;
+    background: #000;
+    opacity: .3;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left: 0;
+    z-index: 9998;
+}
+.sign-up{
+    border-radius: 5px;
     position: fixed;
     background-color: #fff;
     top: 30%;
     left: 50%;
     margin-left: -165px;
     width: 330px;
-    box-shadow: 5px 5px 5px #ccc;
+    box-shadow: 5px 5px 5px rgba(10, 9, 9, 0.44);
+    z-index: 10000;
   }
   
   .sign-up-close{

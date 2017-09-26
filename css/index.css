@@ -1,57 +1,13 @@
 /* index.html css stylesheet */
-/* header start */
-header{
-    min-width: 1200px;
-}
-.header-main{
-    margin: 0 0 15px 0;
-    background: #fff;
-}
-.top-d{
-    height: 30px;
-    width: 1200px;
-    margin: 0 auto;
-    line-height: 30px;
-    color: #AAAAAA;
-}
-.top{
-    width: 1200px;
-    margin: 0 auto 15px;
-   
-}
-.nav{
-    background: #44B549;
-    height: 50px;
-}
-.nav ul{
-    width: 1200px;
-    margin: 0 auto;
-}
-.nav li.on{
-    background: #019C08;
-}
-.nav li{
-    float: left;
-    font-size: 20px;
-    line-height: 50px;
-    text-align:center;
-    width: 150px;
-    cursor: pointer;
-}
-.nav li:hover{
-    background: #019C08;
-}
-header a,header a:hover{
-    color: white;
-}
 
-/* header end */
 .main {
     width: 1200px;
     margin: 0 auto;
 }
 
+
 /* banner start */
+
 .slider-banner {
     display: flex;
     justify-content: space-between;
@@ -64,8 +20,8 @@ header a,header a:hover{
     box-sizing: border-box;
     width: 430px;
     padding: 10px 20px;
-    
 }
+
 .slider-banner .right-c {
     background: white;
     width: 750px;
@@ -73,20 +29,25 @@ header a,header a:hover{
     overflow: hidden;
     position: relative;
 }
+
 .slider-banner .banner-imgs {
     position: absolute;
     left: 0;
 }
-.slider-banner .banner-imgs li{
+
+.slider-banner .banner-imgs li {
     float: left;
 }
-.slider-banner .banner-imgs li img{
+
+.slider-banner .banner-imgs li img {
     height: 328px;
     widows: 750px;
 }
-.slider-banner .left-c ul{
+
+.slider-banner .left-c ul {
     border-bottom: 1px solid #eee;
 }
+
 .slider-banner .left-c li {
     padding: 9px 0;
     width: 390px;
@@ -94,28 +55,38 @@ header a,header a:hover{
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.article li:not(:last-child){
+
+.article li:not(:last-child) {
     border-bottom: 1px solid #eee;
 }
-.slider-banner .banner-inds{
+
+.slider-banner .banner-inds {
     position: absolute;
     bottom: 20px;
+    width: 60%;
+    margin-left: -30%;
     left: 50%;
+    text-align: center;
 }
-.slider-banner .banner-inds>li{
+
+.slider-banner .banner-inds>li {
     cursor: pointer;
-    float: left;
-    margin:0 10px 0 0;
     height: 12px;
     width: 12px;
-    border-radius: 6px; 
-    background: #fff
+    border-radius: 6px;
+    background: #fff;
+    display: inline-block;
 }
-.slider-banner .banner-inds>li.hover{
+
+.slider-banner .banner-inds>li:not(:first-child) {
+    margin-left: 10px;
+}
+
+.slider-banner .banner-inds>li.hover {
     background: #4EA2E8;
 }
 
-.slider-banner .btn{
+.slider-banner .btn {
     height: 60px;
     width: 30px;
     line-height: 60px;
@@ -129,18 +100,25 @@ header a,header a:hover{
     cursor: pointer;
     border-radius: 5px;
 }
-.slider-banner .left-btn{
+
+.slider-banner .left-btn {
     left: 10px;
 }
-.slider-banner .right-btn{
+
+.slider-banner .right-btn {
     right: 10px;
 }
-.slider-banner .btn:hover{
+
+.slider-banner .btn:hover {
     opacity: .5;
 }
+
+
 /* banner end */
 
+
 /* floor common start */
+
 .floor {
     min-height: 300px;
     width: 100%;
@@ -161,9 +139,13 @@ header a,header a:hover{
     font-size: 20px;
     border-bottom: 3px solid #44B549;
 }
+
+
 /* floor common end */
 
+
 /* 花卉大全 多肉植物 start */
+
 .flower-list {
     width: 48%;
 }
@@ -221,9 +203,12 @@ header a,header a:hover{
     padding: 3px;
 }
 
+
 /* 花卉大全 多肉植物 end */
 
+
 /* 百花图谱 start */
+
 .flex-box {
     background: #fff;
     display: flex;
@@ -270,51 +255,47 @@ header a,header a:hover{
     cursor: pointer;
     padding: 0 0 10px 10px;
 }
+
+
 /* 百花图谱 end */
 
+
 /* 每日精选 start */
-.daily-d{
+
+.daily-d {
     overflow: hidden;
 }
-.daily-rec{
+
+.daily-rec {
     margin: 20px 0px 0px;
     position: relative;
     width: 1680px;
-
 }
-.daily-rec li{
-   
+
+.daily-rec li {
     width: 220px;
     margin: 0 15px 0 0;
     overflow: hidden;
     float: left;
 }
-.daily-rec li a{
+
+.daily-rec li a {
     display: block;
 }
-.daily-rec img{
+
+.daily-rec img {
     width: 220px;
 }
-.daily-rec .title{
+
+.daily-rec .title {
     color: #666666;
-    padding:10px 0; 
+    padding: 10px 0;
 }
-.daily-rec .description{
+
+.daily-rec .description {
     font-size: 12px;
     color: #999999;
 }
+
+
 /* 每日精选 end */
-/* footer start */
-.footer{
-    min-width: 1200px;
-    margin-top: 30px;
-    border-top: 5px solid #019C08;
-}
-.footer footer{
-    width: 1200px;
-    text-align: center;
-    margin: 30px auto;
-}
-/* footer start */
-
-

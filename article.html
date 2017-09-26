@@ -2,37 +2,81 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>百花图谱 - 花卉网,您身边的花卉百科</title>
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/header_and_footer.css">
-  <link rel="stylesheet" href="css/article.css">
-  <script>
-    window.onload=function(){
-      var xhr = null;
-        if (window.XMLHttpRequest) {
-            xhr = new XMLHttpRequest();
-        } else {
-            xhr = new ActiveXObject("Microsoft.XMLHTTP");
-        }
-        var url="data/article.php?"+location.href.slice(location.href.indexOf("aid"));
-        // console.log(url);
-        xhr.open("get",url, true);
-        
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState == 4) {
-                if (xhr.status == 200) {
-                    var text=xhr.responseText;
-                    document.body.innerHTML=text;
-                }
-            }
-        };
-        xhr.send(null);
-    };
-  </script>
+    <meta charset="UTF-8">
+    <title>百花图谱 - 花卉网,您身边的花卉百科</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header_and_footer.css">
+    <link rel="stylesheet" href="css/article.css">
+
+
 </head>
 
 <body>
+    <header class="header">
+        <div class="top-d">
+            花卉网,您身边的花卉百科全书!
+            <div class="login_and_register">
+                <!-- <p>欢迎回来!  ${sessionStorage["username"]} <a href="#" class="login-out">退出</a></p> -->
+                <a href="#" class="login-btn">登录</a> | <a href="register.html" class="register-btn">注册</a>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="top">
+                <div class="logo">
+                    <img src="images/header/logo.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav">
+                <ul class="clear">
+                    <li><a href="index.html">首页</a></li>
+                    <li class="on"><a href="knowledge.html">养花知识</a></li>
+                    <li><a href="moreflower.html">花卉大全</a></li>
+                    <li><a href="succulent.html">多肉植物</a></li>
+                    <li><a href="atlas.html">百花图谱</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="main"></div>
+    <div class="login-box">
+        <div class="sign-up-bg"></div>
+        <form class="sign-up">
+            <span class="sign-up-close">×</span>
+            <h1 class="sign-up-title">用户登录</h1>
+            <input type="text" name="uname" class="sign-up-input" placeholder="用户名" autofocus="">
+            <input type="password" name="upwd" class="sign-up-input" placeholder="密码">
+            <input type="submit" value="登 录" class="sign-up-button">
+        </form>
+    </div>
+    <div class="footer">
+        <footer>
+            <p>Copyright © 2017 xxxxxxx.com All right reserved. XXXX 版权所有</p>
+        </footer>
+    </div>
+    <script src="js/login.js"></script>
+    <script>
+        window.onload = function () {
+            var xhr = null;
+            if (window.XMLHttpRequest) {
+                xhr = new XMLHttpRequest();
+            } else {
+                xhr = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            var url = "data/article.php?" + location.href.slice(location.href.indexOf("aid"));
+            // console.log(url);
+            xhr.open("get", url, true);
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4) {
+                    if (xhr.status == 200) {
+                        var text = xhr.responseText;
+                        document.querySelector(".main").innerHTML = text;
+                    }
+                }
+            };
+            xhr.send(null);
+        };
+    </script>
 </body>
 
 </html>

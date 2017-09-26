@@ -7,12 +7,17 @@
     <title>首页 - 花卉网,您身边的花卉百科</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header_and_footer.css">
 </head>
 
 <body>
     <header class="header">
         <div class="top-d">
             花卉网,您身边的花卉百科全书!
+            <div class="login_and_register">
+                <!-- <p>欢迎回来!  ${sessionStorage["username"]} <a href="#" class="login-out">退出</a></p> -->
+                <a href="#" class="login-btn">登录</a> | <a href="register.html" class="register-btn">注册</a>
+            </div>
         </div>
         <div class="header-main">
             <div class="top">
@@ -369,6 +374,17 @@
             <p>Copyright © 2017 xxxxxxx.com All right reserved. XXXX 版权所有</p>
         </footer>
     </div>
+    <div class="login-box">
+        <div class="sign-up-bg"></div>
+        <form class="sign-up">
+            <span class="sign-up-close">×</span>
+            <h1 class="sign-up-title">用户登录</h1>
+            <input type="text" name="uname" class="sign-up-input" placeholder="用户名" autofocus="">
+            <input type="password" name="upwd" class="sign-up-input" placeholder="密码">
+            <input type="submit" value="登 录" class="sign-up-button">
+        </form>
+    </div>
+    <script src="js/login.js"></script>
     <script src="js/common.js"></script>
     <script src="js/index.js"></script>
 </body>
