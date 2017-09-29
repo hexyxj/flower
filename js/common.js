@@ -1,4 +1,7 @@
-function myAjax(method,url) {
+function myAjax(method, url, data) {
+    if (data == undefined) {
+        data = null;
+    }
     return new Promise((resolve, reject) => {
         var xhr = null;
         if (window.XMLHttpRequest) {
@@ -6,7 +9,7 @@ function myAjax(method,url) {
         } else {
             xhr = new ActiveXObject("Microsoft.XMLHTTP");
         }
-        xhr.open( method,url, true);
+        xhr.open(method, url, true);
         if (method.toLowerCase() == "post") {
             xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         }
@@ -19,6 +22,6 @@ function myAjax(method,url) {
                 }
             }
         };
-        xhr.send(null);
+        xhr.send(data);
     })
 }

@@ -1,9 +1,5 @@
 /* header start */
 
-header {
-    min-width: 1200px;
-}
-
 .header-main {
     margin: 0 0 15px 0;
     background: #fff;
@@ -47,10 +43,7 @@ header {
     background: #019C08;
 }
 
-header a,
-header a:hover {
-    color: white;
-}
+
 
 
 /* header end */

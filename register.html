@@ -6,6 +6,7 @@
     <title>用户注册 - 花卉网,您身边的花卉百科</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/header_and_footer.css">
+    <link rel="stylesheet" href="css/register.css">
 </head>
 
 <body>
@@ -35,7 +36,16 @@
         </div>
     </header>
     <div class="main">
-
+        <div class="register-box">
+            <h1>用户注册</h1>
+            <p id="registerMsg" class=""></p>
+            <form action="data/register.php" method="post" class="sign-in">
+                <p><label for="uname">用户名:</label><input type="text" name="uname" id="uname" placeholder="请输入3位以上数字,字母或下划线"><span id="uname-msg">*</span></p>
+                <p><label for="upwd">密码:</label><input type="password" name="upwd" id="upwd"  placeholder="请输入6位以上数字,字母或下划线"><span id="upwd-msg">*</span></p>
+                <p><label for="pwd">确认密码:</label><input type="password" id="pwd" placeholder="请再次输入密码"><span id="pwd-msg">*</span></p>
+                <p><button type="button" class="sign-in-btn">注册</button></p>
+            </form>
+        </div>
     </div>
     <div class="footer">
         <footer>
@@ -52,7 +62,9 @@
             <input type="submit" value="登 录" class="sign-up-button">
         </form>
     </div>
+    <script src="js/common.js"></script>
     <script src="js/login.js"></script>
+    <script src="js/register.js"></script>
 </body>
 
 </html>

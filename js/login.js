@@ -20,9 +20,10 @@
           }
         }) */
       } else if (e.target.classList.contains("register-btn")) {
-        console.log("注册");
+        location.href="register.html"
+        // console.log("注册");
       }else if(e.target.classList.contains("login-out")){
-        console.log("退出");
+        // console.log("退出");
         sessionStorage.removeItem("uname");
         sessionStorage.removeItem("uid");
         history.go(0);
